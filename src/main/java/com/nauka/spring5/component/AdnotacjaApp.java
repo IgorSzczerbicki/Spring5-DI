@@ -14,6 +14,12 @@ public class AdnotacjaApp {
 		//wywolanie metod na Bean'ie
 		System.out.println(theCoach.getDailyWorkout());
 		
+		//zaladowanie Bean'a z kontenera z domyœlnym ID
+		Coach theCoach2 = context.getBean("swimmingCoach", Coach.class);
+		
+		//wywolanie metod na Bean'ie z domyslnym ID
+		System.out.println(theCoach2.getDailyWorkout());
+		
 		//zamkniecie kontekstu
 		context.close();
 	}
