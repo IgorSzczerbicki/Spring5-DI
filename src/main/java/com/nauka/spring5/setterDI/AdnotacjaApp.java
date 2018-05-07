@@ -6,7 +6,7 @@ public class AdnotacjaApp {
 
 	public static void main(String[] args) {
 		//zaladowanie konfiguracji Spring
-		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext-constructorDI.xml");
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext-setterDI.xml");
 		
 		//zaladowanie Bean'a z kontenera
 		Coach theCoach = context.getBean("tennisCoach", Coach.class);
